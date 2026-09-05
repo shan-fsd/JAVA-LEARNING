@@ -1,0 +1,57 @@
+<!-- DIFFERENT IMAGE SOURCES -->
+
+<section>
+    <h2>Different Image Sources</h2>
+
+```
+<picture>
+    <!-- Image for small screens -->
+    <source 
+        media="(max-width: 600px)" 
+        srcset="images/small.jpg"
+    >
+
+    <!-- Image for larger screens -->
+    <source 
+        media="(min-width: 601px)" 
+        srcset="images/large.jpg"
+    >
+
+    <!-- Fallback image -->
+    <img 
+        src="images/default.jpg" 
+        alt="Beautiful landscape"
+        width="500"
+    >
+</picture>
+```
+
+</section>
+
+<hr>
+
+<!-- DIFFERENT VIDEO SOURCES -->
+
+<section>
+    <h2>Different Video Sources</h2>
+
+```
+<video width="500" controls>
+
+    <!-- MP4 source -->
+    <source 
+        src="videos/movie.mp4" 
+        type="video/mp4"
+    >
+
+    <!-- WebM source -->
+    <source 
+        src="videos/movie.webm" 
+        type="video/webm"
+    >
+
+    Your browser does not support video.
+</video>
+```
+
+</section>
